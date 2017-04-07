@@ -1,0 +1,21 @@
+<svg height="286" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="286" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">4 megabytes</tspan>
+<tspan x="10" y="42">├── UNMET PEER DEPENDENCY react@*</tspan>
+<tspan x="10" y="58">├─┬ react-sketchapp@0.9.4 </tspan>
+<tspan x="10" y="74">│ ├── css-layout@1.1.1 </tspan>
+<tspan x="10" y="90">│ ├─┬ error-stack-parser@2.0.0 </tspan>
+<tspan x="10" y="106">│ │ └── stackframe@1.0.2 </tspan>
+<tspan x="10" y="122">│ ├─┬ invariant@2.2.2 </tspan>
+<tspan x="10" y="138">│ │ └─┬ loose-envify@1.3.1 </tspan>
+<tspan x="10" y="154">│ │   └── js-tokens@3.0.1 </tspan>
+<tspan x="10" y="170">│ ├── murmur2js@1.0.0 </tspan>
+<tspan x="10" y="186">│ ├── normalize-css-color@1.0.2 </tspan>
+<tspan x="10" y="202">│ ├── sketch-constants@1.0.2 </tspan>
+<tspan x="10" y="218">│ ├── sketchapp-json-flow-types@0.0.3 </tspan>
+<tspan x="10" y="234">│ └─┬ sketchapp-json-plugin@0.0.3 </tspan>
+<tspan x="10" y="250">│   └── sketchapp-json-flow-types@0.0.2 </tspan>
+<tspan x="10" y="266">└── UNMET PEER DEPENDENCY react-test-renderer@*</tspan>
+</text>
+</svg>
