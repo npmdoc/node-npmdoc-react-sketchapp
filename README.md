@@ -1,9 +1,14 @@
-# api documentation for  [react-sketchapp (v0.9.4)](https://github.com/airbnb/react-sketchapp)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-sketchapp.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-sketchapp) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-sketchapp.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-sketchapp)
+# npmdoc-react-sketchapp
+
+#### api documentation for  [react-sketchapp (v0.10.0)](https://github.com/airbnb/react-sketchapp)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-sketchapp.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-sketchapp) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-sketchapp.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-sketchapp)
+
 #### A React renderer for Sketch.app
 
-[![NPM](https://nodei.co/npm/react-sketchapp.png?downloads=true)](https://www.npmjs.com/package/react-sketchapp)
+[![NPM](https://nodei.co/npm/react-sketchapp.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-sketchapp)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-react-sketchapp/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-react-sketchapp_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-sketchapp/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-react-sketchapp/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-react-sketchapp/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-react-sketchapp/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-sketchapp/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-react-sketchapp/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Jon Gold",
-        "email": "jon.gold@airbnb.com",
         "url": "http://jon.gold"
     },
     "bugs": {
@@ -26,12 +30,10 @@
     },
     "contributors": [
         {
-            "name": "Ben Wilkins",
-            "email": "ben.wilkins@airbnb.com"
+            "name": "Ben Wilkins"
         },
         {
-            "name": "Leland Richardson",
-            "email": "leland.richardson@airbnb.com"
+            "name": "Leland Richardson"
         }
     ],
     "dependencies": {
@@ -74,10 +76,10 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "38bd57b1cc0a308bef4bcf0c9fbf229c0b06f3e6",
-        "tarball": "https://registry.npmjs.org/react-sketchapp/-/react-sketchapp-0.9.4.tgz"
+        "shasum": "3a7cfb830f2f91e2f0ef4474b37ea7c7335dc21b",
+        "tarball": "https://registry.npmjs.org/react-sketchapp/-/react-sketchapp-0.10.0.tgz"
     },
-    "gitHead": "172b4a4f3c6cfa2f9d44b777feacba3a5645594f",
+    "gitHead": "b4cff0bf45ed59b23bfd57f466a1fb6c2aed9177",
     "homepage": "https://github.com/airbnb/react-sketchapp",
     "keywords": [
         "sketch",
@@ -96,8 +98,7 @@
     "main": "lib/index.js",
     "maintainers": [
         {
-            "name": "jongold",
-            "email": "hello@designedbygold.com"
+            "name": "jongold"
         }
     ],
     "name": "react-sketchapp",
@@ -107,7 +108,6 @@
         "react-test-renderer": "*"
     },
     "pre-commit": "lint-staged",
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/airbnb/react-sketchapp.git"
@@ -132,83 +132,8 @@
         "test:watch": "npm run test -- --watch",
         "watch": "npm run build:react -- --watch"
     },
-    "version": "0.9.4"
+    "version": "0.10.0"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module react-sketchapp](#apidoc.module.react-sketchapp)
-1.  object <span class="apidocSignatureSpan">react-sketchapp.</span>debug
-
-#### [module react-sketchapp.debug](#apidoc.module.react-sketchapp.debug)
-1.  [function <span class="apidocSignatureSpan">react-sketchapp.debug.</span>dump (obj)](#apidoc.element.react-sketchapp.debug.dump)
-1.  [function <span class="apidocSignatureSpan">react-sketchapp.debug.</span>timeFunction (fn, label)](#apidoc.element.react-sketchapp.debug.timeFunction)
-
-
-
-# <a name="apidoc.module.react-sketchapp"></a>[module react-sketchapp](#apidoc.module.react-sketchapp)
-
-
-
-# <a name="apidoc.module.react-sketchapp.debug"></a>[module react-sketchapp.debug](#apidoc.module.react-sketchapp.debug)
-
-#### <a name="apidoc.element.react-sketchapp.debug.dump"></a>[function <span class="apidocSignatureSpan">react-sketchapp.debug.</span>dump (obj)](#apidoc.element.react-sketchapp.debug.dump)
-- description and source-code
-```javascript
-function dump(obj) {
-  log('#####################################################################################');
-  log('## Dumping object ' + obj);
-  log('## obj class is: ' + obj.className());
-  log('#####################################################################################');
-  log('obj.properties:');
-  log(obj.class().mocha().properties());
-  log('obj.propertiesWithAncestors:');
-  log(obj.class().mocha().propertiesWithAncestors());
-  log('obj.classMethods:');
-  log(obj.class().mocha().classMethods());
-  log('obj.classMethodsWithAncestors:');
-  log(obj.class().mocha().classMethodsWithAncestors());
-  log('obj.instanceMethods:');
-  log(obj.class().mocha().instanceMethods());
-  log('obj.instanceMethodsWithAncestors:');
-  log(obj.class().mocha().instanceMethodsWithAncestors());
-  log('obj.protocols:');
-  log(obj.class().mocha().protocols());
-  log('obj.protocolsWithAncestors:');
-  log(obj.class().mocha().protocolsWithAncestors());
-  log('obj.treeAsDictionary():');
-  log(obj.treeAsDictionary());
-  return obj;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.react-sketchapp.debug.timeFunction"></a>[function <span class="apidocSignatureSpan">react-sketchapp.debug.</span>timeFunction (fn, label)](#apidoc.element.react-sketchapp.debug.timeFunction)
-- description and source-code
-```javascript
-function timeFunction(fn, label) {
-  var a = MSMoment.new().timestamp();
-
-  var res = fn();
-
-  var b = MSMoment.new().timestamp();
-
-  var time = (b - a).toFixed(3);
-
-  log(label + ': ' + time);
-
-  return res;
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
